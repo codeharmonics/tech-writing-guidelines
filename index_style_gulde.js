@@ -6,8 +6,8 @@ function sendToAlgolia(records) {
 
     const algoliasearch = require('algoliasearch');
 
-    const client = algoliasearch('97B70U0A4O', '9b244155b0f3b81eb604cff3313f3f92');
-    //const client = algoliasearch('7EXY6WCVKT', '4bfe7a998c8e88f9d87c3586496f4993');
+    const client = algoliasearch('', '');
+    //const client = algoliasearch('', '');
 
     const index = client.initIndex('style_guide');
     const tmpIndex = client.initIndex('style_guide_tmp');

@@ -170,7 +170,7 @@ function indexAllStyleGuidePages_MD() {
             var html = converter.makeHtml(buf.toString());
             records[recordCount++] = getAllPageRecords(file.replace(".md",".html"), html);
 
-            create_HTML_files_from_MD_files("html/"+file.replace(".md",".html"), html);
+            //create_HTML_files_from_MD_files("html/"+file.replace(".md",".html"), html);
         });
     });
 

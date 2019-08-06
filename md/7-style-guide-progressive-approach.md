@@ -1,0 +1,60 @@
+Reprinted (abridged) from our [blog](https://blog.algolia.com/redesigning-docs-part-2-making-technical-content-readable-everybody/).
+
+# Making Technical Content Readable for Everybody
+
+Many docs are written by and for developers. This works fine when your readers are developers who require straightforward, immediate information, like details about method parameters, code snippets, and error messages. However, when your company grows not only in customer base but by offering more business-related features, then dictionary-style text - or what is often called reference material - does not sufficiently cover the broader needs of building complex applications with multiple features and best practices. Best practices, for example, are critical: correct and efficient feature implementation is the only way that clients get the best out of what your company has carefully designed.
+
+Our documentation covers a broad range of subjects, like synonyms, intent detection, NLP, analytics, personalization, and merchandising - all of which impact business as well as implementation. Our readers include not only developers, but CTOs, product managers, and marketers. We therefore need to support readers with different goals and profiles.
+
+We address these concerns by including more accessible word choice and more storytelling in the content flow of each page.
+
+Essentially, we decided to take a **progressive approach**, where everything - navigation, page structure, and language - starts from the familiar and gets progressively more complex, with clear signs along the way where to find code or to go more in-depth.
+
+## Choosing vocabulary
+Our first concern was language. Previously, we were not using words and phrases that everybody could understand. We relied a lot on jargon, which had the dual problem of assuming that everyone who read our content was highly technical and also good at reading our minds.
+
+Take a word like replica. On its own, it means nothing to a first-time reader. It’s an Algolia-centric term: we own its meaning when we speak it. We use it in a very specific way that differs from its dictionary meaning. However, we need to use it: there’s no better word for capturing the idea of “a duplicate index that sorts results differently from other indices”. Granted, that sentence needs a lot more context - we need to define the terms “index” and “sorts”, otherwise, database administrators might come away with the mistaken understanding that an Algolia index sits on top of a database table, whereas in Algolia, an index is the data source itself, and sorting is a complex subject at Algolia, requiring its own page. You get the idea - we stopped taking anything for granted.
+
+Good word choice follows the general recommendation that technical documentation use plain language. Our approach, therefore, starts with a common word before using a more technical term. A word needs an introduction, like a character who needs to be introduced before speaking or acting.
+
+We try to define all terms. Some words require only a single word or phrase, like “attributes (key/value pairs, fields, information)”; others need a bit more context, like “Searchable attributes (a select group of attributes used for searching as opposed to displaying, filtering, or ranking)”. And some terms (relevance) need a full page (that required days of research and interviews with key Algolians, including our founder and CTO). But the result was worth it, because all of these terms are core concepts and many of them have multiple nuances depending on the context.
+
+## Start with the problem before introducing the solution
+We considered the first paragraph of every page as an effective method to engage the reader. We asked - What do we want every reader to see when they land on one of our pages? Our answer was: A simple statement or description of the problem that the page was going to solve.
+
+This problem-solving approach is consistent with using a clear vocabulary and defining terms. We believe that going directly into a problem puts the reader into a familiar setting and encourages them to continue reading, to find out how to resolve the problem. I say “problem”, but it could be a need or a common use case. Problem-solving speaks directly to any reader interested in solving their own problem. This approach can also appeal to the curious who is looking to opt into Algolia or to enhance their existing solution.
+
+## Using more examples
+We tried to stick with one example per page and to thread that example into the general treatment of the problem/solution. We were aware that not every example applied directly to a reader’s particular situation, but we thought that a well-chosen example would nonetheless enable every reader to see how a specific problem gets resolved and be able to adapt it to their own situation. In fact, one page presented several examples, from movies to recipes, to actors, to books, and back to movies, with some repeating characters, like Charlie Chaplin, Harry Potter, and blueberry pie. The page finally finished by combining movies and actors in the same index. For this page, each example was important to explain a different aspect of the same storyline, which was that formatting your data has many nuances and requires different choices.
+
+## Creating new kinds of pages
+Going beyond the first paragraph, we considered the whole page - What do we want our readers to see? We came up with three kinds of content: a summary overview, a deeper understanding, and an implementation guide with code examples.
+
+Before designing the pages, however, we needed to address two main concerns:
+
+- How to engage non-technical readers, to discourage them from leaving right away, and to avoid too much of a technical feel on the page.
+- In contrast, we needed to avoid over-simplifying or being too general. We needed to satisfy our developer-readers with straight-to-the-point technical explanations as well as clear implementation details.
+
+We had thus given ourselves a difficult but not impossible task: to satisfy two very different concerns - on the same page, with the same words and same conditions. The solution we came up with was two-fold:
+
+- The non-tech needs to feel welcomed in a language they speak, in terms that they can understand, and with examples that speak to them. They need a progressive flow that starts with the familiar before getting more complex.
+- As for the developers, they need to do a bit more scrolling. But let’s be honest, they were going to scroll anyway, right? So they start scrolling, and quickly they land on what they want - specific answers to specific questions. Additionally, they need to have clear signposts (hyperlinks, buttons) showing them where to find code, other implementation details, or deeper information about a subject.
+
+In short, we wanted to give all readers, developers included, a clear description of a problem, with examples and descriptions of the feature(s) used to address it, and obvious navigation for more info or code. To do this, we set up a 3-page approach:
+
+- A landing page, which sets the stage by summarizing a problem and describing, in a general way, the how, why, and what of our solution/feature. With that background, readers could take the following next steps: stop reading, because they only needed a summary; go to a how-to page that gives exact implementation details; go to an in-depth page that digs deeper into the problem/solution.
+- A how-to page (as well as our existing API reference pages), which contain plenty of examples, more detailed explanations, and lots of code. Generally, we present a use case or problem, offer an example or real dataset, and then walk the reader through our solution.
+- An in-depth page that goes beyond the summary description. It takes more time with the subject and gives the reader more information about a feature and its context. This is for the reader who needs or wants to know more. It also gives the writer some breathing space to go fully into a subject and to give it the full treatment it deserves.
+
+## The progressive approach
+As stated at the outset, what we are describing here is a progressive approach to documentation that is present at every level - architectural, page format, content flow, and words and phrases. Every part of our documentation starts with the familiar and moves towards the more technical and complex, with the hope that the familiar will drive the understanding of the technical and complex.
+
+## The structure of our style guide
+
+- [Why a Style Guide?](https://github.com/algolia/doc/blob/style-docs/doc_team/1-style-guide-start-here.md)
+- [Cheat Sheet](https://github.com/algolia/doc/blob/style-docs/doc_team/2-style-guide-cheat-sheet.md)
+- [Overall Approach](https://github.com/algolia/doc/blob/style-docs/doc_team/3-style-guide-first-principles.md)
+- [How We Structured Our Docs](https://github.com/algolia/doc/blob/style-docs/doc_team/4-style-guide-structure.md)
+- [Language Choices](https://github.com/algolia/doc/blob/style-docs/doc_team/5-style-guide-language.md)
+- [Voice and Tone](https://github.com/algolia/doc/blob/style-docs/doc_team/6-style-guide-voice-and-tone.md)
+- [Reprint of Our Writing Choices Blog](https://github.com/algolia/doc/blob/style-docs/doc_team/7-style-guide-progressive-approach.md)

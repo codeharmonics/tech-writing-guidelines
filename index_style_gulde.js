@@ -143,7 +143,7 @@ function getAllPageRecords(pageName, body) {
     return records;
 };
 
-function makeHtmlFromMD(filePathAndName, contents) {
+function create_HTML_files_from_MD_files(filePathAndName, contents) {
     var fs = require('fs');
 
     fs.writeFile(filePathAndName, contents, function(err) {
@@ -170,7 +170,7 @@ function indexAllStyleGuidePages_MD() {
             var html = converter.makeHtml(buf.toString());
             records[recordCount++] = getAllPageRecords(file.replace(".md",".html"), html);
 
-            //makeHtmlFromMD("html/"+file.replace(".md",".html"), html);
+            create_HTML_files_from_MD_files("html/"+file.replace(".md",".html"), html);
         });
     });
 
